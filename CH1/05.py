@@ -38,5 +38,18 @@ def n_gram(n, sequence):
 
     return (word_n_gram, char_n_gram)
 
+def n_gram2(n, sequence):
+    '''
+    n_gramの書き直し
+    '''
+    result = []
+    #
+    for i in range(0, len(sequence)-n+1):
+        result.append(sequence[i:i+n])
+    return result
+
 if __name__ == "__main__":
     print(n_gram(2, "I am an NLPer"))
+    print(n_gram2(2, "I am an NLPer"))
+    print(n_gram2(2, "I am an NLPer".split()))
+
