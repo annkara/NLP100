@@ -19,6 +19,8 @@ except ValueError as e:
 text = 'hightemp.txt'
 with open(text, 'rt') as f:
     count = 0
+    # enumerate()を利用すれば、count変数は不要になる。
+    # for i, line in enumerate(f) で、iがcount変数の代わりになる。
     for row in f:
         if count == row_number:
             break
