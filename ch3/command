@@ -1,1 +1,4 @@
-wget http://www.cl.ecei.tohoku.ac.jp/nlp100/data/jawiki-country.json.gz && gzip -d jawiki-country.json
+wget http://www.cl.ecei.tohoku.ac.jp/nlp100/data/jawiki-country.json.gz 
+
+# 解凍せずにgz形式のまま扱うぽい。
+gzip -d jawiki-country.json
