@@ -5,7 +5,7 @@
 text = 'hightemp.txt'
 
 with open(text) as f:
-    col1s = set([e.split('\t')[0] for e in f.readlines()])
+    col1s = {e.split('\t')[0] for e in f.readlines()}
 
 for e in col1s:
     print(e)
